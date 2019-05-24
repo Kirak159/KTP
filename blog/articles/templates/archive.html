@@ -1,0 +1,26 @@
+<body class="mainbod">
+    <div class="header">
+        <a href='new/' class="newart">Новая статья</a>
+        <a href='accounts/login/' class="login">Войти</a>
+        <a href='accounts/signup/' class="login">Зарегистрироваться</a>
+      {% load static %}
+        <img src="{% static "flowers.png" %}" alt="My image"/>
+        <link rel="stylesheet" href="{% static "styles.css" %}"/>
+    </div>    
+    <div class="archive">  
+        {% for post in posts %}  
+        <div class="one-post"> 
+        <h2><a href={{post.id}} class="header2">{{post.title}}</a> </h2>
+        
+        <div class="article-info">        
+            <div class="article-author">{{ post.author.username }}
+            </div>        
+            <div class="article-created-date">{{ post.created_date }}
+            </div>    
+        </div>    
+        <p class="article-text">{{ post.get_excerpt }}</p>
+
+        </div>   
+        {% endfor %}
+    </div>
+</body>

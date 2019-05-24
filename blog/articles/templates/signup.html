@@ -1,0 +1,16 @@
+<div class="registr">
+  <h2>{% block title %}Sign Up{% endblock %}</h2>
+
+  <body class="regi">
+    {% block content %}
+      {% load static %}
+      <link rel="stylesheet" href="{% static "styles.css" %}"/>
+        <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Sign up</button>
+      </form>
+    
+    {% endblock %}
+  </body>
+</div>
