@@ -1,0 +1,52 @@
+<!doctype html>
+<html><head>
+    <body class="mainbod">
+        <div class="header">
+            
+            
+            <a href='new/' class="newart">Новая статья</a>
+            <a href='accounts/login/' class="login">Войти</a>
+            <a href='accounts/signup/' class="login">Зарегистрироваться</a>
+            {% load static %}
+            <div class="logo-img">
+            <img class="logo" src="{% static "flowers.png" %}" alt="My image"/>
+            </div>
+            <div class="logo-parala">
+                 {% load static %}
+                <img class="logo-par-fir1" src="{% static "Ricardo.png" %}" alt="My image"/>
+                <img class="logo-par-sec2" src="{% static "Ricardo.png" %}" alt="My image"/>
+                <img class="logo-par-tre3" src="{% static "Ricardo.png" %}" alt="My image"/>
+            </div>
+            <link rel="stylesheet" href="{% static "styles.css" %}"/>
+        </div>  
+                 <div class="logo-parallax">
+                {% load static %}
+                <img class="logo-par-fir" src="{% static "flowers.png" %}" alt="My image"/>
+                <img class="logo-par-sec" src="{% static "flowers.png" %}" alt="My image"/>
+                <img class="logo-par-tre" src="{% static "flowers.png" %}" alt="My image"/>
+            </div>
+                {% for post in posts %}
+                    
+                    <div class="one-post">
+                        <div class="one-post-shadow"></div>
+                        <h2><a href={{post.id}} class="header2">{{post.title}}</a> </h2>
+                        <a href="#" class="btn">Свернуть</a>
+                        <div class="article-info">        
+                            <div class="article-author">{{ post.author.username }}
+                            </div>        
+                            <div class="article-created-date">{{ post.created_date }}
+                            </div>    
+                        </div>    
+                        <p class="article-text">{{ post.get_excerpt }}</p>
+                        
+                    </div>
+                {% endfor %}
+        <script src="static/jquery-3.4.0.js"></script>
+        <script language="JavaScript" src="static/Shadow.js"></script>
+        <script language="JavaScript" src="static/Fold.js"></script>
+        <script language="JavaScript" src="static/groupmates.js"></script>
+        <script language="Javascript" src="static/para.js"></script>
+
+        
+    </body>
+</head></html>

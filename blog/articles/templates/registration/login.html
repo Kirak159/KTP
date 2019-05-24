@@ -1,0 +1,11 @@
+<div class="backgrond"><h2 class="name-login">Login</h2>
+  <div class="main_Bod">
+    <form method="post">
+    {% load static %}
+        <link rel="stylesheet" href="{% static "styles.css" %}"/>
+    {% csrf_token %}
+    <body class="LOGIN">{{ form.as_p }}</body>
+    <body class="But-Log"><button type="submit">Login</button></body>
+    </form>
+  </div>
+</div>
