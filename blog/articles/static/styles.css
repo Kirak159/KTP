@@ -1,0 +1,147 @@
+
+
+.mainbod
+{   
+    background: rgba(214, 43, 230, 0.342);
+    font-family: Tahoma, Arial, sans-serif;
+    color: rgb(0, 0, 0);
+}
+.logo-img
+{
+    text-align: center;
+}
+.logo
+{
+    width: 90%;
+    height: 300px;
+}
+.Bodyofart
+{
+    background: rgba(255, 251, 0, 0.623);
+    color: rgb(0, 0, 0);
+}
+.article-infoinart
+{
+   font-family: Impact, fantasy;
+}
+.article-textinart
+{
+    font-family: Hand, cursive;
+    font-size: 20px;
+}
+h1
+{
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 30px;
+
+}
+.article-info
+{
+   font-family: Impact, fantasy;
+}
+.header2
+{
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 30px;
+    color: olive;
+}
+.article-author 
+{    
+    width: 50%;    
+    float: left;
+}
+.article-created-date 
+{    
+    text-align: right;
+}
+.Createpost
+{
+    background: rgba(123, 247, 247, 0.61);
+}
+.content
+{
+    position: relative;
+    background-color: brown;
+    border-radius: 1.5em;
+    width:100%;
+}
+.name
+{
+    text-align: center;
+}
+.auth
+{
+    align-content: center;
+    text-align: center;
+    vertical-align: middle;
+}
+.full
+{
+    align-content: center;
+    text-align: center;
+    vertical-align: middle;
+}
+.save
+{
+    align-content: center;
+    text-align: center;
+    vertical-align: middle;
+}
+.err 
+{
+    align-content: center;
+    text-align: center;
+    vertical-align: middle;
+}
+.name-login
+{
+    align-content: center;
+    text-align: center;
+}
+.LOGIN
+{
+    align-content: center;
+    text-align: center;
+}
+.main_Bod
+{
+    background: tomato;
+}
+.backgrond
+{
+    background: rgba(108, 226, 78, 0.637);
+    height: 100%;
+}
+.registr
+{
+    align-content: center;
+    background: chocolate;
+    height: 100%;
+}
+.regi 
+{
+    text-align: left;
+}
+.btn
+{
+    margin-left: 95%;
+}
+.one-post.folded .article-info {
+    display: none;
+}
+.one-post.folded .article-text{
+    display: none;
+}
+.one-post
+{
+    padding:50px;
+}
+.one-post-shadow{
+    border-radius: 5%;
+    position: absolute;
+    height: 40%;
+    width:95%;
+    background: black;
+    z-index: -1;
+    opacity:0;
+}
