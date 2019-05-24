@@ -1,0 +1,50 @@
+.mainbod
+{   
+    background: rgba(214, 43, 230, 0.342);
+    font-family: Tahoma, Arial, sans-serif;
+    color: rgb(0, 0, 0);
+}
+img
+{
+    width: 100%;
+    height: 300px;
+}
+.Bodyofart
+{
+    background: rgba(255, 251, 0, 0.623);
+    color: rgb(0, 0, 0);
+}
+.article-infoinart
+{
+   font-family: Impact, fantasy;
+}
+.article-textinart
+{
+    font-family: Hand, cursive;
+    font-size: 20px;
+}
+h1
+{
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 30px;
+
+}
+.article-info
+{
+   font-family: Impact, fantasy;
+}
+.header2
+{
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 30px;
+    color: olive;
+}
+.article-author 
+{    
+    width: 50%;    
+    float: left;
+}
+.article-created-date 
+{    
+    text-align: right;
+}

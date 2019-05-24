@@ -1,0 +1,23 @@
+<body class="Bodyofart">
+    <div class="HeaderforArticle">
+        <h4><a href='/'>Вернуться на главную</a> </h4>
+        {% load static %}
+        <link rel="stylesheet" href="{% static "styles.css" %}"/>
+       <h1> {{post.title}}</h1>
+    </div>    
+
+    <div class="Aticle">   
+        
+
+        <div class="article-infoinart">  
+
+            <div class="article-authorinart">{{ post.author.username }}</div>        
+            <div class="article-created-dateinart">{{ post.created_date }}</div> 
+
+        </div>    
+
+        <p class="article-textinart">{{ post.get_excerpt }}</p>
+
+        
+    </div>
+</body>
